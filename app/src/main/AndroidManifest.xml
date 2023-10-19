@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Meminta izin INTERNET yang diperlukan untuk mengakses jaringan -->
+    <application
+        android:name=".MarsPhotosApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MarsPhotos"
+        tools:targetApi="33"> <!-- Alat untuk target API versi 33 -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.MarsPhotos"> <!-- Gaya tema aktivitas -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" /> <!-- Aksi utama aktivitas -->
+                <category android:name="android.intent.category.LAUNCHER" /> <!-- Kategori peluncur aktivitas -->
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
